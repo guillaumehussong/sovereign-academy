@@ -5,7 +5,7 @@
   "projectType": "library",
   "targets": {
     "lint": {
-      "executor": "@nx/linter:eslint",
+      "executor": "@nx/eslint:lint",
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": ["libs/api/github/**/*.ts"]
@@ -13,7 +13,7 @@
     },
     "test": {
       "executor": "@nx/vite:test",
-      "outputs": ["coverage/libs/api/github"],
+      "outputs": ["{workspaceRoot}/coverage/libs/api/github"],
       "options": {
         "passWithNoTests": true,
         "reportsDirectory": "../../../coverage/libs/api/github"
