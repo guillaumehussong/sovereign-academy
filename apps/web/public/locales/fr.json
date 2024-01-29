@@ -101,7 +101,7 @@
       "level": "Niveau : $t(words.level.{{level}})",
       "mobile": {
         "chapters": "{{chapters}} chapitres",
-        "hours": "{{hours}} heures"
+        "hours": "{{hours}} heures"
       },
       "numberOfChapters": "Nombre de chapitres : {{number}}",
       "objectives": "Objectifs",
@@ -480,7 +480,7 @@
     "level": {
       "advanced": "Avancé",
       "beginner": "Débutant",
-      "expert": "Expert",
+      "developpeur": "Développeur",
       "intermediate": "Intermédiaire"
     },
     "library": "Bibliothèque",
