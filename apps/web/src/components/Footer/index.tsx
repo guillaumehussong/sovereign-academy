@@ -16,7 +16,6 @@ import {
 import { cn } from '@sovereign-university/ui';
 
 import BigTree from '../../assets/footer/big_tree.svg';
-import Hill from '../../assets/footer/hill.svg';
 import Rabbit from '../../assets/footer/rabbit.svg';
 import Tree from '../../assets/footer/tree.svg';
 
@@ -93,9 +92,8 @@ export const Footer = ({ variant = 'light', color }: FooterProps) => {
           )}
         >
           <div className="relative z-30 -mb-20 h-52"></div>
-          <img src={Hill} className="w-full text-clip" alt="" />
-          <div className="relative z-10 flex h-80 w-full flex-col justify-center overflow-x-clip bg-green-900">
-            <div className="mx-auto mb-10 mt-5 flex w-fit flex-col justify-center space-y-7">
+          <div className="relative z-10 flex h-[26rem] w-full flex-col justify-center overflow-x-clip bg-green-900">
+            <div className="mx-auto mt-20 flex w-fit flex-col justify-center space-y-7">
               <div className="grid grid-cols-3 gap-12">
                 <div className="flex flex-col">
                   <h4 className="mb-2 text-xl font-semibold text-white">
@@ -131,7 +129,7 @@ export const Footer = ({ variant = 'light', color }: FooterProps) => {
                 </div>
                 <div className="flex flex-col pl-12 ">
                   <h4 className="mb-2 text-xl font-semibold text-white">
-                    <Link to={''}>{t('words.helpUs')}</Link>
+                    {t('words.helpUs')}
                   </h4>
                   <ul className="flex flex-col space-y-1 text-lg font-light text-white/50">
                     <li>
@@ -159,17 +157,17 @@ export const Footer = ({ variant = 'light', color }: FooterProps) => {
             </div>
             <img
               src={Rabbit}
-              className="absolute -right-2 top-24 z-10 m-auto h-16"
+              className="absolute -right-2 top-40 z-10 m-auto h-16"
               alt=""
             />
             <img
               src={Tree}
-              className="absolute -left-20 -top-44 m-auto h-80 w-[25%] scale-x-[-1]"
+              className="absolute -left-20 -top-28 m-auto h-80 w-[25%] scale-x-[-1]"
               alt=""
             />
             <img
               src={BigTree}
-              className="absolute -top-48 right-0 m-auto h-80 w-[25%]"
+              className="absolute -top-32 right-0 m-auto h-80 w-[25%]"
               alt=""
             />
           </div>
